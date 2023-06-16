@@ -76,6 +76,7 @@ app.use(helmet())
 
 const scriptSrcUrls = [
     "https://cdn.jsdelivr.net/",
+    "https://icons.getbootstrap.com/",
     // "https://cdn.jsdelivr.net",
     // "https://stackpath.bootstrapcdn.com/",
     // "https://api.tiles.mapbox.com/",
@@ -86,6 +87,7 @@ const scriptSrcUrls = [
 ];
 const styleSrcUrls = [
     "https://cdn.jsdelivr.net/",
+    "https://icons.getbootstrap.com/"
     // "https://stackpath.bootstrapcdn.com/",
     "https://api.mapbox.com/",
     // "https://api.tiles.mapbox.com/",
