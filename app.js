@@ -52,6 +52,7 @@ app.use(mongoSanitize({
 //     touchAfter: 24*60*60
 // })
 const secret = process.env.SECRET || 'thisshouldbeabettersecret!';
+const port = process.env.PORT
 
 const sessionConfig = {
     store: MongoDBStore.create({mongoUrl: dbUrl}),
@@ -151,6 +152,6 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error', {err})
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('app is listening')
 })
